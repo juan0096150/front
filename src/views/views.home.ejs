@@ -1,182 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio Tartaro | Bienvenido</title>
-    <link rel="stylesheet" href="./css/views/index.css">
-    <script src="https://kit.fontawesome.com/58e42bf76d.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thomas A. Anderson (Neo) - Portafolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin-right: 30px;
+    }
+
+    h1,
+    h2 {
+      color: #0f0;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons i {
+      color: #0f0;
+      margin-right: 10px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      background-color: #0f01;
+      color: #0f0;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+
+    .experience-item,
+    .education-item {
+      border: 1px solid #0f0;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .project {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .extra-section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .extra-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #0f0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .bi {
+      font-size: 1.5em;
+    }
+
+    .about {
+      border-bottom: 1px solid #0f0;
+    }
+  </style>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav-main">
-            <a href="index.html">
-                <img src="./img/logo2.png" alt="">
-            </a>
-            <form action="">
-                <input type="text" placeholder="Buscar contenido...">
-            </form>
-            <ul>
-                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="" class="vender">Vender</a></li>
-                <li><a href="#" id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></a></li>
-            </ul>
+  <div class="container">
+    <header>
+      <img src="/img/image.png" alt="Thomas A. Anderson" class="profile-img">
+      <div>
+        <h1>Thomas A. Anderson (Neo)</h1>
+        <p style="color: #0f0;">Programador, hacker y el Elegido</p>
+        <p><small>Matrix y el mundo real</small></p>
+        <p><i class="bi bi-geo-alt"></i> Envigado, Antioquia</p>
+        <div class="social-icons">
+          <i class="bi bi-envelope"></i>
+          <i class="bi bi-file-text"></i>
+          <i class="bi bi-github"></i>
+          <i class="bi bi-linkedin"></i>
         </div>
-        <div class="nav-center" id="nav-center">
-            <ul class="list-items">
-                <li id="categories-toggle">
-                    <a href="#">Categorias</a>
-                    <ul class="dropdown" id="categories-dropdown">
-                        <li><a href="#">Tecnologia</a></li>
-                        <li><a href="#">Mercado</a></li>
-                        <li><a href="#">Comida rápida</a></li>
-                        <li><a href="#">Limpieza</a></li>
-                        <li><a href="#">Tendencia</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Supermercado</a></li>
-                <li><a href="search.html">Buscar</a></li>
-            </ul>
-            <ul class="list-links">
-                <li><a href="signup.html">Crea tu cuenta</a></li>
-                <li><a href="login.html">Ingresar</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-        </div>
-    </nav>
-    <header class="slider-container">
-        <div class="slider relative">
-            <div class="slide active" style="background-image: url('img/header/header1.jpg');">
-                <div class="slide-content">
-                    <h2 class="text-4xl font-bold">Tu Portal de Compras Inteligentes en Colombia</h2>
-                    <p class="mt-2 text-xl">Explora, Compara y Ahorra en Productos de Todos los Mercados</p>
-                </div>
-            </div>
-            <div class="slide next" style="background-image: url('img/header/header2.jpg');">
-                <div class="slide-content">
-                    <h2 class="text-4xl font-bold">Descubre Ofertas que Redefinen el Ahorro</h2>
-                    <p class="mt-2 text-xl">Encuentra las Mejores Promociones de forma Rápida y Eficaz</p>
-                </div>
-            </div>
-            <div class="slide next" style="background-image: url('img/header/header3.jpg');">
-                <div class="slide-content">
-                    <h2 class="text-4xl font-bold">Tu Aliado Perfecto para Comprar de Forma Inteligente</h2>
-                    <p class="mt-2 text-xl">Descubre Productos de Calidad y Ofertas Que No Puedes Perder</p>
-                </div>
-            </div>
-            <!-- Botones de flecha -->
-            <button id="prev" class="arrow-btn">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <button id="next" class="arrow-btn">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-        </div>
+      </div>
     </header>
 
-    <main>
-        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center items-start">
-            <div class="product-card bg-white p-4 rounded-lg shadow-lg">
-                <img src="img/img35.jpg" alt="Producto"
-                    class="w-full h-48 object-cover rounded-lg mb-4">
-                <h3 class="text-lg font-bold mb-2">Tacos</h3>
-                <p class="text-gray-700 mb-2">1 tortillas blandas rellenas con cuadritos de carne de res medio picantes, lechuga, vinagreta de miel, tocineta crocante y sourcream.</p>
-                <p class="text-orange-600 font-bold mb-4">$15,000</p>
-                <div class="flex space-x-2">
-                    <a href="#" class="bg-orange-600 text-white py-2 px-4 rounded-lg">Ver</a>
-                    <a href="#" class="bg-green-600 text-white py-2 px-4 rounded-lg">Comprar</a>
-                </div>
-            </div>
-            <div class="product-card bg-white p-4 rounded-lg shadow-lg">
-                <img src="img/img36.jpg" alt="Producto"
-                    class="w-full h-48 object-cover rounded-lg mb-4">
-                <h3 class="text-lg font-bold mb-2">Patatas</h3>
-                <p class="text-gray-700 mb-2">Patata largas,Aceite de oliva virgen extra,30 ml,Cúrcuma molida 1 pizca,Ajo granulado,Pimienta negra molida,Sal,pimienta caliente.</p>
-                <p class="text-orange-600 font-bold mb-4">$8,000</p>
-                <div class="flex space-x-2">
-                    <a href="#" class="bg-orange-600 text-white py-2 px-4 rounded-lg">Ver</a>
-                    <a href="#" class="bg-green-600 text-white py-2 px-4 rounded-lg">Comprar</a>
-                </div>
-            </div>
-            <div class="product-card bg-white p-4 rounded-lg shadow-lg">
-                <img src="img/img37.jpg" alt="Producto"
-                    class="w-full h-48 object-cover rounded-lg mb-4">
-                <h3 class="text-lg font-bold mb-2">Combo de Hamburguesa</h3>
-                <p class="text-gray-700 mb-2">Hamburguesa royal philadelphia, acompañada de papas francesas tipo casco y 2 coca-cola 400ml, con papas fritas a la francesa.</p>
-                <p class="text-orange-600 font-bold mb-4">$27,000</p>
-                <div class="flex space-x-2">
-                    <a href="#" class="bg-orange-600 text-white py-2 px-4 rounded-lg">Ver</a>
-                    <a href="#" class="bg-green-600 text-white py-2 px-4 rounded-lg">Comprar</a>
-                </div>
-            </div>
-            <div class="product-card bg-white p-4 rounded-lg shadow-lg">
-                <img src="img/img38.avif" alt="Producto"
-                    class="w-full h-48 object-cover rounded-lg mb-4">
-                <h3 class="text-lg font-bold mb-2">Donas</h3>
-                <p class="text-gray-700 mb-2">Elige tus sabores favoritos y aprovecha nuestra promo paga 5 y lleva 7,"Donut Rellena de Arequipe,Donut rellena de Mora.</p>
-                <p class="text-orange-600 font-bold mb-4">$36,000</p>
-                <div class="flex space-x-2">
-                    <a href="#" class="bg-orange-600 text-white py-2 px-4 rounded-lg">Ver</a>
-                    <a href="#" class="bg-green-600 text-white py-2 px-4 rounded-lg">Comprar</a>
-                </div>
-            </div>
-        </section>
+    <section class="section about">
+      <h2>Sobre mí</h2>
+      <p>Soy un programador inquieto con una doble vida, ya que trabajo en una prestigiosa empresa de software pero
+        también he cometido todos los crímenes informáticos que existen. Tengo la sensación de que nada es lo que parece
+        ser.</p>
+    </section>
 
-    </main>
-    <footer class="bg-secondary text-white py-10 mt-10 ">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 ">
-                <nav>
-                    <h3 class="text-white text-lg font-bold mb-4 ">Información</h3>
-                    <ul>
-                        <li class="mb-2 "><a class="hover:text-white transition-colors duration-200 "
-                                href="">Condiciones de uso </a></li>
-                        <li class="mb-2 "><a class="hover:text-white transition-colors duration-200 " href="">Aviso de
-                                privicidad </a></li>
-                        <li class="mb-2 "><a class="hover:text-white transition-colors duration-200 " href="">Ayuda </a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav>
-                    <h3 class="text-white text-lg font-bold mb-4 ">Legal</h3>
-                    <ul>
-                        <li class="mb-2 "><a class="hover:text-white transition-colors duration-200 " href="">Terminos y
-                                condiciones </a></li>
-                        <li class="mb-2 "><a class="hover:text-white transition-colors duration-200 " href="">Todos los
-                                derechos reservados </a></li>
-                        <li class="mb-2 "><a class="hover:text-white transition-colors duration-200 " href="">Tartaro
-                                INC</a></li>
-                    </ul>
-                </nav>
-                <nav>
-                    <h3 class="text-white text-lg font-bold mb-4 ">Redes sociales</h3>
-                    <ul class="flex space-x-4">
-                        <li class="mb-2 "><a href=""><i class="fab fa-facebook fa-lg"></i></a></li>
-                        <li class="mb-2 "><a href=""><i class="fab fa-twitter fa-lg"></i></a></li>
-                        <li class="mb-2 "><a href=""><i class="fab fa-instagram fa-lg"></i></a></li>
-                    </ul>
-                </nav>
-                <nav>
-                    <h3 class="text-white text-lg font-bold mb-4 ">Contacto</h3>
-                    <ul>
-                        <li class="mb-2 "><a class="hover:text-white transition-colors duration-200 "
-                                href="mailto:danirojasbermudez20@gmail.com">danirojasbermudez20@gmail.com</a></li>
-                        <li class="mb-2 "><a class="hover:text-white transition-colors duration-200 "
-                                href="tel:+573052338332"> +57 305-233-8332</a></li>
-                    </ul>
-                </nav>
 
-            </div>
-            <div class="mt-8 text-center border-t border-gray-700 pt-4">
-                <p>&copy; 2024 Tartaro Inc. Todos los derechos reservados</p>
-            </div>
+    <section class="section">
+      <h2>Tecnologías</h2>
+      <div class="tech-tags">
+        <span class="tag"><i class="bi bi-shield"></i> Binario</span>
+        <span class="tag"><i class="bi bi-terminal"></i> Ensamblador</span>
+        <span class="tag"><i class="bi bi-code-slash"></i> COBOL</span>
+        <span class="tag"><i class="bi bi-cup"></i> C</span>
+        <span class="tag"><i class="bi bi-filetype-py"></i> Python</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Experiencia</h2>
+      <div class="experience-item">
+        <div>
+          <h3>Metacortex</h3>
+          <p>Programador</p>
+          <p><small>Programo software respetable desde un cubículo.</small></p>
         </div>
+        <span style="color: #0f0;">1999</span>
+      </div>
+      <div class="experience-item">
+        <div>
+          <h3>Nebuchadnezzar</h3>
+          <p>El Elegido</p>
+          <p><small>Me encargo de salvar el mundo.</small></p>
+        </div>
+        <span style="color: #0f0;">1999 - Actualidad</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Proyectos</h2>
+      <div class="project">
+        <div>
+          <h3>Software random</h3>
+          <p>Software propiedad de Metacortex</p>
+          <p><small>Herramienta para hacer rico a otras personas.</small></p>
+          <div class="tech-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Django</span>
+          </div>
+          <div class="social-icons">
+            <i class="bi bi-github"></i>
+            <i class="bi bi-file-text"></i>
+          </div>
+        </div>
+        <img src="https://via.placeholder.com/300x200" alt="Software random">
+      </div>
+      <div class="project">
+        <div>
+          <h3>Hackeo Matrix</h3>
+          <p>Mi obra maestra</p>
+          <p><small>Migración del Matrix al mundo real y hackeo del sistema ficticio para salvar a la humanidad.</small>
+          </p>
+          <div class="tech-tags">
+            <span class="tag">Binario</span>
+          </div>
+          <div class="social-icons">
+            <i class="bi bi-github"></i>
+            <i class="bi bi-file-text"></i>
+          </div>
+        </div>
+        <img src="https://via.placeholder.com/300x200" alt="Hackeo Matrix">
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Formación</h2>
+      <div class="education-item">
+        <div>
+          <h3>Central West Junior High</h3>
+          <p>Una escuela</p>
+          <p><small>Aprendí cosas.</small></p>
+        </div>
+        <i class="bi bi-shield" style="color: #0f0;"></i>
+      </div>
+      <div class="education-item">
+        <div>
+          <h3>Owen Patterson High</h3>
+          <p>Otra escuela</p>
+          <p><small>Aprendí más cosas.</small></p>
+        </div>
+        <i class="bi bi-shield" style="color: #0f0;"></i>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Extra</h2>
+      <div class="extra-section">
+        <div class="extra-item">
+          <img src="https://via.placeholder.com/300x200" alt="The Matrix">
+          <p>The Matrix</p>
+          <p><small>Aparecí en esta película.</small></p>
+        </div>
+        <div class="extra-item">
+          <img src="https://via.placeholder.com/300x200" alt="The Matrix Reloaded">
+          <p>The Matrix Reloaded</p>
+          <p><small>Y en esta otra.</small></p>
+        </div>
+        <div class="extra-item">
+          <img src="https://via.placeholder.com/300x200" alt="The Matrix Revolutions">
+          <p>The Matrix Revolutions</p>
+          <p><small>Y en esta más.</small></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Thomas A. Anderson (Neo)</span>
+      <div class="social-icons">
+        <i class="bi bi-envelope"></i>
+        <i class="bi bi-file-text"></i>
+        <i class="bi bi-github"></i>
+        <i class="bi bi-linkedin"></i>
+      </div>
     </footer>
-    <script src="js/menu.js"></script>
-    <script src="js/slider.js"></script>
+  </div>
+
+  <script>
+    // Añadir efecto de "glitch" a los textos principales
+    function glitchEffect(element) {
+      const originalText = element.textContent;
+      const glitchChars = '!<>-_\\/[]{}—=+*^?#________';
+
+      setInterval(() => {
+        element.textContent = originalText.split('').map((char, index) => {
+          if (Math.random() < 0.1) {
+            return glitchChars[Math.floor(Math.random() * glitchChars.length)];
+          }
+          return char;
+        }).join('');
+
+        setTimeout(() => {
+          element.textContent = originalText;
+        }, 50);
+      }, 3000);
+    }
+
+    document.querySelectorAll('h1, h2').forEach(glitchEffect);
+  </script>
 </body>
 
 </html>
